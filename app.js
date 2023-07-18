@@ -12,7 +12,7 @@ const months = { "january": 1, "february": 2, "march": 3, "april": 4, "may": 5, 
 const pool = mysql.createPool({
   host: "127.0.0.1",
   user: process.env.DBUSERNAME,
-  database: "product",
+  database: process.env.DBNAME,
   password: process.env.DBPASSWORD,
 }).promise();
 
